@@ -49,4 +49,4 @@ Temporary Items
 #My ignores
 tmp/
 logs/
-.phpintel/
+.phpintel

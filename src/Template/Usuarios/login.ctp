@@ -39,8 +39,8 @@ $this->layout = false;
                 </div> */ ?>
                 <div id="login-pass" class="field">
                   <label>Contraseña</label>
-                  <input  type="password" class="text" name="password" placeholder="Contrase&ntilde;a" tabindex="2" maxlength="32">
-                </div> 
+                  <input  type="password" class="text" name="password" placeholder="Contraseña" tabindex="2" maxlength="32">
+                </div>
                 <?= $this->Flash->render()  ?>
                 <?= $this->Flash->render('auth') ?>
                 <div class="btnlogeo">

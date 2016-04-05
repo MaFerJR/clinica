@@ -109,9 +109,9 @@ class UsuariosController extends AppController
     public function login()
     {
         if ($this->request->is('post')) {
-            $this->request->data["username"] = 'todos@mail.com';
+            $this->request->data['username'] = 'todos@mail.com';
             $user = $this->Auth->identify();
-            print_r($this->Auth);
+            //print_r($this->Auth);
             if ($user) {
                 //print_r($this->request->data);       
                 $this->Auth->setUser($user);

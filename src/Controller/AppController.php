@@ -82,12 +82,13 @@ class AppController extends Controller
 
     public function beforeFilter(Event $event)
     {
-        $this->Auth->allow(['add','edit','logout']);
+        $this->Auth->allow(['add','login','logout']);
     }
     
     public function isAuthorized($user)
     {
         if (isset($user['role']) && $user['role'] === 'admin') {
+            //print_r($user);
             return true;
         }
         return false;
