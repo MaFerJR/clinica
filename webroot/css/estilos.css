@@ -1,0 +1,153 @@
+* {
+	outline: none;
+}
+body {
+	margin: 0;
+	background-color: #fff;
+	color: #222;
+	/*min-width: 1080px;*/
+/*	background: url("../imagenes/fondo.png") no-repeat fixed left top #999;*/
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:13px;
+}
+a {
+	color: #EB0A15;
+	text-decoration: none;
+	-webkit-transition: color .2s linear;
+	-moz-transition: color .2s linear;
+}
+
+a:hover {
+	color: #000;
+}
+
+::selection {
+	background: #000;
+	color: white;
+	text-shadow: 0 1px rgba(0, 0, 0, .2);
+}
+
+::-moz-selection {
+	background: #007fc2;
+	color: white;
+	text-shadow: 0 1px rgba(0, 0, 0, .2);
+}
+
+::-o-selection {
+	background: #ec0a16;
+	color: white;
+	text-shadow: 0 1px rgba(0, 0, 0, .2);
+}
+
+body#login-page {
+	min-width: 600px;
+}
+
+
+
+.login-wrap .mensaje {
+	text-shadow: 0 1px 0 #EEE;
+	color: #222;
+	text-align: center;
+	width: 600px;
+	padding: 15px 0 0;
+	margin: 0 auto;
+	margin-top: 110px;
+}
+
+.login-wrap h2 {
+	font-size: 28px;
+	margin: 0;
+}
+
+form#form-logeo {
+	width: 280px;
+	margin: -15px auto;
+/*	background: url("../imagenes/separador.png") no-repeat top center;*/
+background-color:#FFF;
+	padding-top: 30px;
+}
+
+form#form-comunicado {
+	width: 280px;
+	margin: -15px auto;
+/*	background: url("../imagenes/separador.png") no-repeat top center;*/
+	padding-top: 30px;
+}
+
+form.generic .field {
+	margin-bottom: 10px;
+}
+
+form.generic label {
+	display: block;
+
+	font-size: 13px;
+	color: #212121;
+	text-shadow: 0 0px 0 #EEE;
+	margin-bottom: 8px;
+}
+
+form#form-logeo input.text {
+	width: 258px;
+}
+
+form.generic input.text {
+	font-size: 14px;
+	border-color: #DDD;
+	-webkit-transition: border-color .2s linear;
+	-moz-transition: border-color .2s linear;
+	border: 1px solid #BBB;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	box-shadow: 0 1px 0 #eee;
+	-webkit-box-shadow: 0 1px 0 #eee;
+	-moz-box-shadow: 0 1px 0 #eee;
+	display: block;
+	width: auto;
+	border-image: initial;
+}
+
+form input.text, form input.search, .contact-wrapper textarea {
+	padding: 10px;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif 14px;
+	
+}
+
+form.generic label span {
+	color: #878787;
+	font-weight: normal;
+}
+
+form.generic .btnlogeo {
+	overflow: hidden;
+}
+
+form.generic #login-submit {
+	height: 36px;
+	width: 280px;
+	padding: 0 0 1px;
+}
+
+form.generic a.button, form.generic #login-submit {
+	cursor: pointer;
+	display: block;
+	line-height: 34px;
+	padding: 0 20px;
+	font-size: 13px;
+
+	font-family: Arial, Helvetica, sans-serif;	background-color: #007fc2;
+	color: white;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border: 1px solid rgba(0, 0, 0, .2);
+	box-shadow: 0 0 0 1px rgba(255, 255, 255, .4) inset, 0 1px #fff;
+	-moz-box-shadow: 0 0 0 1px rgba(255, 255, 255, .4) inset, 0 1px #fff;
+	-webkit-box-shadow: 0 0 0 1px rgba(255, 255, 255, .4) inset, 0 1px #fff;
+	text-shadow: 0 -1px rgba(0, 0, 0, .2);
+	text-align: center;
+	border-image: initial;
+}
