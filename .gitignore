@@ -47,6 +47,6 @@ Temporary Items
 .apdisk
 
 #My ignores
-tmp
-logs
-.phpintel
+tmp/
+logs/
+.phpintel/
