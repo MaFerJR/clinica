@@ -52,10 +52,10 @@ class UsuariosController extends AppController
         if ($this->request->is('post')) {
             $usuario = $this->Usuarios->patchEntity($usuario, $this->request->data);
             if ($this->Usuarios->save($usuario)) {
-                $this->Flash->success(__('The usuario has been saved.'));
+                $this->Flash->success(__('El usuario ha sido guardado.'));
                 return $this->redirect(['action' => 'index']);
             } else {
-                $this->Flash->error(__('The usuario could not be saved. Please, try again.'));
+                $this->Flash->error(__('El usuario no ha sido guardado. Por favor, intente de nuevo.'));
             }
         }
         $this->set(compact('usuario'));
@@ -77,10 +77,10 @@ class UsuariosController extends AppController
         if ($this->request->is(['patch', 'post', 'put'])) {
             $usuario = $this->Usuarios->patchEntity($usuario, $this->request->data);
             if ($this->Usuarios->save($usuario)) {
-                $this->Flash->success(__('The usuario has been saved.'));
+                $this->Flash->success(__('El usuario ha sido guardado.'));
                 return $this->redirect(['action' => 'index']);
             } else {
-                $this->Flash->error(__('The usuario could not be saved. Please, try again.'));
+                $this->Flash->error(__('El usuario no ha sido guardado. Por favor, intente de nuevo.'));
             }
         }
         $this->set(compact('usuario'));
@@ -99,9 +99,9 @@ class UsuariosController extends AppController
         $this->request->allowMethod(['post', 'delete']);
         $usuario = $this->Usuarios->get($id);
         if ($this->Usuarios->delete($usuario)) {
-            $this->Flash->success(__('The usuario has been deleted.'));
+            $this->Flash->success(__('El usuario ha sido eliminado.'));
         } else {
-            $this->Flash->error(__('The usuario could not be deleted. Please, try again.'));
+            $this->Flash->error(__('El usuario no ha sido eliminado. Por favor, intente de nuevo.'));
         }
         return $this->redirect(['action' => 'index']);
     }

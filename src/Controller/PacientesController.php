@@ -51,10 +51,10 @@ class PacientesController extends AppController
         if ($this->request->is('post')) {
             $paciente = $this->Pacientes->patchEntity($paciente, $this->request->data);
             if ($this->Pacientes->save($paciente)) {
-                $this->Flash->success(__('The paciente has been saved.'));
+                $this->Flash->success(__('El paciente ha sido guardado.'));
                 return $this->redirect(['action' => 'index']);
             } else {
-                $this->Flash->error(__('The paciente could not be saved. Please, try again.'));
+                $this->Flash->error(__('El paciente no ha sido guardado. Por favor, intente de nuevo.'));
             }
         }
         $this->set(compact('paciente'));
@@ -76,10 +76,10 @@ class PacientesController extends AppController
         if ($this->request->is(['patch', 'post', 'put'])) {
             $paciente = $this->Pacientes->patchEntity($paciente, $this->request->data);
             if ($this->Pacientes->save($paciente)) {
-                $this->Flash->success(__('The paciente has been saved.'));
+                $this->Flash->success(__('El paciente ha sido guardado.'));
                 return $this->redirect(['action' => 'index']);
             } else {
-                $this->Flash->error(__('The paciente could not be saved. Please, try again.'));
+                $this->Flash->error(__('El paciente ha sido guardado. Por favor, intente de nuevo.'));
             }
         }
         $this->set(compact('paciente'));
@@ -98,9 +98,9 @@ class PacientesController extends AppController
         $this->request->allowMethod(['post', 'delete']);
         $paciente = $this->Pacientes->get($id);
         if ($this->Pacientes->delete($paciente)) {
-            $this->Flash->success(__('The paciente has been deleted.'));
+            $this->Flash->success(__('El paciente ha sido eliminado.'));
         } else {
-            $this->Flash->error(__('The paciente could not be deleted. Please, try again.'));
+            $this->Flash->error(__('El paciente no ha sido eliminado. Por favor, intente de nuevo.'));
         }
         return $this->redirect(['action' => 'index']);
     }
