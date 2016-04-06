@@ -154,7 +154,6 @@ class <?= $name ?> extends AbstractMigration
                     $statement = $this->Migration->tableStatement($table);
                     if (!empty($statement)): ?>
         <?= $statement ?>
-
 <?php endif; ?>
             ->addForeignKey(
                 <?= $columnsList ?>,
@@ -183,9 +182,7 @@ class <?= $name ?> extends AbstractMigration
 <?php foreach ($columnsList as $key => $columns): ?>
             ->dropForeignKey(
                 <?= $columns ?>
-
             )<?= ($key === $maxKey) ? ';' : '' ?>
-
 <?php endforeach; ?>
 
 <?php endforeach; ?>
