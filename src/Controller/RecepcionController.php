@@ -9,7 +9,7 @@ use App\Controller\CuartospController;
 class RecepcionController extends AppController
 
 {
-//
+
 var $Cuartos;
 
 	public function index()
